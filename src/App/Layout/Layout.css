@@ -1,0 +1,66 @@
+/* Navbar styling */
+.header {
+  background-color: rgba(248, 249, 250, 0.95); /* Light color with slight transparency */
+}
+
+.custom-navbar {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); /* More visible shadow */
+  z-index: 1050; /* Higher z-index to ensure it appears above other elements */
+}
+
+.nav-links .button {
+  font-size: 16px;
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.nav-links .button:hover {
+  color: #007bff;
+}
+
+.nav-links .button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.nav-links .active-button {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+.nav-links .active-button::after {
+  width: 100%;
+}
+
+.user-details {
+  font-weight: bold;
+  color: #333; /* Neutral color */
+}
+
+.user-details .username {
+  font-size: 16px;
+  color: #007bff; /* Highlighted color */
+}
+
+.user-details .role {
+  font-size: 14px;
+  color: #6c757d; /* Subtle gray color */
+}
+
+.no-caret::after {
+  display: none !important;
+}
+
+.content {
+  margin-top: 75px; /* Space for fixed navbar */
+}
